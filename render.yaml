@@ -1,7 +1,6 @@
 services:
-  - type: web
+  - type: static
     name: "rolex-fitness-factory"
-    runtime: "static"
     buildCommand: "npm install && npm run build"
     publishDir: "dist"
     envVars:
