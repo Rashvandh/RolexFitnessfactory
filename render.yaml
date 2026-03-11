@@ -1,9 +1,9 @@
 services:
   - type: web
-    name: rolex-fitness-factory
-    runtime: static
-    buildCommand: npm install && npm run build
-    publishDir: dist
+    name: "rolex-fitness-factory"
+    runtime: "static"
+    buildCommand: "npm install && npm run build"
+    publishDir: "dist"
     envVars:
       - key: VITE_SUPABASE_URL
         sync: false
@@ -11,5 +11,5 @@ services:
         sync: false
     routes:
       - type: rewrite
-        source: /*
-        destination: /index.html
+        source: "/*"
+        destination: "/index.html"
