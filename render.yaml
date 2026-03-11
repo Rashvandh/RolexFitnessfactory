@@ -1,8 +1,9 @@
 services:
-  - type: static
+  - type: web
     name: "rolex-fitness-factory"
+    env: "static"
     buildCommand: "npm install && npm run build"
-    publishDir: "dist"
+    staticPublishDir: "dist"
     envVars:
       - key: VITE_SUPABASE_URL
         sync: false
